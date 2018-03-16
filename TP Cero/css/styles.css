@@ -1,10 +1,14 @@
 
+body {
+	width: 1600px;
+}
 .GIF {
-	width: 100%;
-	height: 440px;
-	padding right: 20px;
-	padding-left: 20px;
+	width: 1480px;
+	height: 440px; 
 	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img	{
@@ -21,8 +25,8 @@ input {
 }
 
 .email {
+	margin-top: 20px;
 	text-align: center;
-	margin: 20px;
 }
 
 .button {
@@ -30,20 +34,24 @@ input {
 }
 
 .redes {
-	width: 100%;
-	display: inline-block;
+	padding-right: 60px;
 	margin-top: 50px;
+	text-align: right;
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;
+*/}
+
+.icon{ 
+	height: 36px;
+	width: 36px;
 }
+
 
 a {
 	text-decoration: none;
 }
 
-.icon{ 
-	height: 36px;
-	width: 36px;
-	margin: 5px;
-}
 
 footer {
 	margin-top: 100px;
