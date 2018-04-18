@@ -79,8 +79,11 @@ a {
 }
 .icon{
   height: 50px;
-  margin: 10px;
-  
+  margin: 10px;  
+}
+
+.icon:hover {
+  transform: scale(1.15);
 }
 
 body div p{
@@ -162,7 +165,9 @@ section{
   color: white;
 }              
 
-
+.icon2:hover {
+  transform: scale(1.15);
+}
 
 
 
