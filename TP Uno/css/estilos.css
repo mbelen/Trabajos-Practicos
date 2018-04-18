@@ -29,8 +29,9 @@ nav ul li a{
             font-size:1.8em;
             padding:30px 50px;
 }
-nav ul li a:hover{background-color:#F37979;
-                    border-radius: 5px 5px 0px 0px ; 
+nav ul li a:hover{
+  background-color:#F37979;
+  border-radius: 5px 5px 0px 0px ; 
 }
 
 
@@ -105,27 +106,21 @@ body div p{
  text-align: justify;
  }
 /*--------------------CARROUSEL-------------------*/
-.carrusel {
-  background:#444343;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
 .img-slide {
-padding: 10px;
-height: 300px;
+  height: 450px;
 }
 
 /*--------------------SECCION PERFIL-------------------*/
 section{
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  text-align: justify;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
 }
   
-.InformacionPersonal{display: flex;
+.InformacionPersonal{
+    display: flex;
     flex-direction: column;
     justify-content: center;}
 
@@ -135,18 +130,24 @@ section{
 
 .contenedor {
   width: 300px;
-  
+  padding: 20px;
 }
     
-.contenedor-img{transition:  all 0.5s;
-  height: 150px;
-  margin: 10px;
-  
+.contenedor-img{
+  transition:  all 0.5s;
+  height: 300px;
+  margin: 20px;
   }
 
-  figure{display: flex;}
+  h2{
+  font-family: 'Jua', sans-serif;
+  color: #E54444;
+  }
 
-    
+  .descripcion{
+    font-family: 'Jua', sans-serif;
+    font-size: 1em;
+  }
 
 /*--------------------REDES SOCIALES-------------------*/
 .RedesSociales{ 
