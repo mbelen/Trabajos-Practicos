@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -11,7 +9,7 @@ body {
   background: 	#f26868;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 figure{
@@ -27,7 +25,7 @@ figure{
 
 #instrucciones {
   font-family: Titan One, 'cursive';
-  width: 700px;
+  width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -62,15 +60,12 @@ figure{
   margin: 5px;
 }
 
-.pieza,
-.back,
-.front {
+.pieza, .back, .front {
   height: 150px;
   width: 150px;
 }
 
-.back,
-.front {
+.back, .front {
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -104,29 +99,42 @@ figure{
 /*--------------------RESPONSIVE-------------------*/
 
 @media (max-width: 800px) {
+
+  body {
+    width: 100%;
+    margin: 20px 0;
+    background: 	#f26868;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   #instrucciones {
     width: 80%;
  }
 
-.pieza,
-.back,
-.front {
-  height: 125px;
-  width: 125px;
+ .pieza, .back, .front {
+  height: 150px;
+  width: 150px;
 }
 
 }
 
 @media (max-width: 450px){
-
+  body {
+    width: 100%;
+    margin: 20px 0;
+    background: 	#f26868;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   #instrucciones {
      width: 80%;
   }
 
-  .pieza,
-  .back,
-  .front {
+  .pieza, .back, .front {
     height: 100px;
     width: 100px;
   }
