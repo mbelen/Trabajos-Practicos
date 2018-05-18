@@ -60,7 +60,7 @@ tableroArmado.forEach(function (e){
     
 });
 
-//Que el jugador ponga su nombre y se cargue en el tablero
+//Para que el jugador ponga su nombre y se cargue en el tablero
 var nombre = prompt("Nombre del jugador");
 var respuesta = document.getElementById('nombre');
 respuesta.innerHTML = 'Nombre de jugador: ' + nombre 
@@ -96,7 +96,7 @@ tablero.addEventListener('click', function (event) {
       return;
     }
   // si el contador es menor a dos se puede seleccionar, sino no.
-    if (contSel != 2) {
+    if (contSel < 2) {
       contSel++;
       if (contSel === 1) {
         match1 = clicked.parentNode.dataset.personaje;  // primer macheo, le pongo la clase marcada
@@ -108,7 +108,7 @@ tablero.addEventListener('click', function (event) {
         clicked.parentNode.classList.add('marcada');
       }
   
-      // Si ninguna opcion esta vacia, y son iguales
+      // Si ambas fichas tienen datos guardados, y son iguales se machea y se resetea para seguir
       if (match1 && match2) {
         if (match1 === match2) {
           setTimeout(match, delay);// llama a la funcion y le aplica un delay 
@@ -116,7 +116,6 @@ tablero.addEventListener('click', function (event) {
         setTimeout(resetMacheo, delay); // llama a la funcion con un efecto delay
       }
       // contador de intentos cada dos fichas dadas vuelta
-      
           if (contSel==2){
               intentos++
               console.log("cantidad de intentos " + intentos);
