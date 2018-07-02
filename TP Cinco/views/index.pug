@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	div
+		div.principal
+			div.centro
+				div.bookList
+					each libro in libros
+						div.cuadro
+							img(src=libro.imagen class='imagen')
+							p.recuadro=libro.titulo
+							a(href="/biblioteca/ficha/"+libro.titulo).recuadro Detalle
+							if(libro.bookmarked)
+								i(class="fa fa-bookmark marked" data-id=libro.titulo)
+							else
+								i(class="fa fa-bookmark" data-id=libro.titulo)
+				div
+					div(class="divnumeros")
+						each pagina in paginas
+							a(href='/biblioteca/filtro/'+pagina class="numero")=pagina
+				div
+					h3.fix 
+						|Haz click 
+						a(href="/biblioteca/marked").fix aqui 
+						|para ver tus libros seleccionados 
+

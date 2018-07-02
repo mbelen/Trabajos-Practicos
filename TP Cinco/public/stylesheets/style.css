@@ -1,0 +1,276 @@
+*{
+	font-family:"Arial";
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(to top, #ffafbd, #ffc3a0) repeat;
+}
+
+/*Layout*/
+
+.container {
+	width:85%;
+	margin:0 auto;
+	margin-top:80px;
+	height:auto;
+	padding-bottom:10px;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+}
+
+.titulo {
+	font-family:"Permanent Marker";
+	font-size:5em;
+	color: #ca7f8d;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.principal{
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.principal label {
+	color:#ca7f8d;
+	font-weight:bold;
+	margin: 10px;
+}
+
+.principal select {
+	width: 150px;
+	height:25px;
+	border-radius:5px;
+	margin: 10px;
+}
+
+#btnBuscar {
+	width:20%;
+	height:25px;
+	border-radius:5px;
+	margin: 10px;
+}
+
+a{
+	color:black;
+	text-decoration: none;
+}	
+
+a:hover{
+	color:#ca7f8d;
+	text-decoration: none;
+}	
+
+/*Home*/
+
+#homeArreglo{
+	width: 80%;
+	margin: auto;
+	border: solid #ff3d00;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+
+}
+
+.fix {
+	font-family: 'Permanent Marker';
+	text-align: center;
+}
+
+/*Index*/
+
+.centro {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.bookList{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.cuadro {
+	height: auto;
+	width: auto;
+	border: solid 2px #ca7f8d;
+	padding: 10px;
+	text-align: center;
+	margin: 20px;
+}
+
+.imagen{
+	margin: auto;
+	height: 250px;
+}
+
+.recuadro{
+	font-family: 'Permanent Marker';
+}
+
+.fa-bookmark{
+	width: 20px;
+	margin-left: 40%;
+	border-radius: 20%;
+	color:#ca7f8d;
+}
+
+.fa-bookmark:hover{
+	color: #ff3d00;
+}
+
+.marked {
+	color: #ff3d00;
+}
+
+.divnumeros {
+	display:flex;
+	justify-content:center;
+	margin-bottom:15px;
+}
+
+.numero {
+	width:35px;
+	height:35px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius: 20px;
+	margin: 5px;
+}
+
+#btnBuscar, .numero {
+	background-color:#ca7f8d;
+	font-weight:bold;
+}
+
+#btnBuscar:hover, .numero:hover {
+	background-color:#ffe1ef;
+	transition:0.5s;
+}
+
+
+/*Index Libreria*/
+
+.vistaDetalle{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.borde {
+	border: solid 2px #ca7f8d;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: 20px;
+	height: 380px;
+}
+
+.portada {
+	height: 350px;
+}
+
+.datos {
+	width: 60%;
+}
+
+.big{
+	position: absolute;
+	right: -1;
+}
+
+.datos h2 {
+	margin-top:0;
+	color:#00b686;
+	font-weight:bold;
+}	
+
+h5, .font{
+	font-family: 'Permanent Marker';
+	font-size: 1em;
+}
+
+.link{
+	font-weight: bold;
+	font-family: 'Permanent Marker';
+	text-align: center;
+}
+
+
+/*Marked*/
+
+ul li{
+	font-family: "Permanent Marker";
+	font-size: 1.5em;
+}
+
+.link2{
+	margin: 10px;
+	font-size: 0.7em;
+	font-family: 'Permanent Marker'
+}
+
+.alinear{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.alinear h3{
+	font-family: 'Permanent Marker';
+	
+}
+
+/*error y errores*/
+
+.errorContent{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
+
+}
+
+.errorContent h1  {
+	margin:15px 0;
+	font-family: 'Permanent Marker'
+}
+
+.errorContent h3 {
+	margin-top:0;
+	font-family: 'Permanent Marker'
+}
+
+#cancel {
+	width: 200px;
+}
+
+/*THE END*/
+
+
+
+
+
+
+
+
+
+
+
+

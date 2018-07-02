@@ -1,0 +1,15 @@
+extends layout
+
+block content
+		div.vistaDetalle
+			div(class="borde")
+				img(src=libro.imagen class="portada")
+			div(class="datos")
+				h2=libro.nombre
+				h5 Autor: #{libro.autor}
+				h5 Idioma: #{libro.idioma}
+				h5 Genero: #{libro.genero}
+				p.font(align='justify')=libro.sinopsis
+				a.link(href="javascript:history.back()") Pagina anterior 
+				a.link(href="/biblioteca/marked")  - Ir a libros seleccionados 
+				a.link(href="/") - Pagina principal 

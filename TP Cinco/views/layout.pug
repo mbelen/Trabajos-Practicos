@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		title Mis Libros
+		link(rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon")
+		link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css')
+		link(href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet")
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		div(class="container")
+				header 
+					a(href="/" class='titulo') Agus' Library
+				div(class ="principal")
+						form(action="/biblioteca/filtro" method="POST").form 
+								label(for="genero") Genero
+								select(name="genero")
+									option(val="todos") Todos
+									option(val="Ficcion") Ficcion
+									option(val="Literatura Romantica") Literatura Romantica
+								label(for="autor") Autor
+								select(name="autor")
+									option(val="todas") Todas
+									option(val="J. K. Rowling") J. K. Rowling
+									option(val="Jane Austen") Jane Austen
+									option(val="Maria Dueñas") Maria Dueñas
+									option(val="Florencia Bonelli") Florencia Bonelli
+								label(for="idioma") Idioma
+								select(name="idioma") 
+									option(val="todas") Todas
+									option(val="Ingles") Ingles
+									option(val="Español") Español
+								input(id="btnBuscar" type="submit" value="Buscar")
+				block content
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/main.js')
