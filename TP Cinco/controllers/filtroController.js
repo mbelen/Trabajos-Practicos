@@ -7,12 +7,12 @@ self.filtrarForm = function(req,res,next){//filtro por cada select
 	var idioma = req.body.idioma.toLowerCase();
 	var genero = req.body.genero.toLowerCase();
 
-	if(autor!="todas"){
+	if(autor!="todos"){
 		filtroLibro = service.libros().filter(function(item){return item.autor.toLocaleLowerCase()===autor});
 	}else{
 		filtroLibro = service.libros();
 	}
-	if(idioma!="todas"){
+	if(idioma!="todos"){
 		filtroLibro = filtroLibro.filter(function(item){return item.idioma.toLocaleLowerCase()===idioma})
 	}
 	if(genero!="todos"){
@@ -48,7 +48,5 @@ self.renderizar = function(req,res,next){
 	
 	res.render('index', {libros:librosPagina, paginas:arrayPaginas})
 }
-
-
 
 module.exports = self;
