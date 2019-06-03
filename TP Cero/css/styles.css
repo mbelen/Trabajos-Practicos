@@ -1,6 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 body {
 	width: 1600px;
+} 
+
+.general {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
 }
 .GIF {
 	width: 1480px;
@@ -34,17 +48,29 @@ input {
 }
 
 .redes {
-	padding-right: 60px;
 	margin-top: 50px;
-	text-align: right;
-	/*display: block;
+	/*display: flex;
+	justify-content: flex-end;*/
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
-*/}
+}
+
+div.alinear {
+	width: 1480px;
+	display: flex;
+	justify-content: flex-end;
+	
+}
 
 .icon{ 
 	height: 36px;
 	width: 36px;
+	margin: 10px;
+}
+
+.icon:hover{
+	background-color: #ffff99;
 }
 
 

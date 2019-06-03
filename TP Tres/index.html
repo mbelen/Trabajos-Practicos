@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  
+  <header>
+    <figure >
+      <img  id = 'logo' src="img/Steven_Universe_logo.svg.png" alt="logo">
+    </figure>
+  </header>
+
+  <div class = 'arreglar'>
+      
+    <div class="column">
+      <section id = 'difDiv'>
+        <h3>Selecciona la dificultad:</h3> 
+            <form id="dificultad">
+              <input type="radio" class="clase" name="dificultad" value="Facil">Facil - 18 movimientos<br>
+              <input type="radio" class="clase" name="dificultad" value="Intermedio">Intermedio - 12 movimientos <br>
+              <input type="radio" class="clase" name="dificultad" value="Experto">Experto - 8 movimientos <br>
+              <!--Dificultad <input type="text" id="result"> <br>-->
+              <button type="button" id='btn'> Empezar </button> <br>
+            </form>
+      </section>
+
+      <section id = "instrucciones">
+        <h3>Nombre de Jugador: </h1>  
+        <p id ='nombre'>  </p>
+          <h3>Instrucciones: </h3>
+          <p>Encontrar los seis pares de personajes dando vuelta cada ficha. </br> Tenes 24 intentos para completar el juego.</br> Mucha suerte! </p>
+          <div id = 'intentos'> Cantidad de intentos:  </div> <br>
+          <a href="ranking.html" id="link"> Ver Ranking </a>
+       </section>
+      </div>
+
+       <div id="memotest"> </div>
+
+  </div>
+
+        
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+  
+
+</body>
+
+</html>

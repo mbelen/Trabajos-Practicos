@@ -1,0 +1,9 @@
+extends layout
+
+block content
+		div.principal
+			div.errorContent
+				h1=mensaje
+				h3=detalle
+				img(src="/images/cancel.svg" id='cancel')
+				a(href="/").link Volver a la página principal

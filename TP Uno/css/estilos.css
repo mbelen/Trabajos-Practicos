@@ -1,0 +1,316 @@
+*{margin: 0;
+padding: 0;
+ }
+
+/*--------------------HEADER-------------------*/
+header{
+  display: flex;
+	justify-content: space-between;
+	background: #E54444;
+	/*margin-left: 5%;*/
+}
+
+#logo {
+  height: 100px;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  }
+
+nav ul li a{
+            display: flex;
+            align-self: center;
+            text-decoration:none;
+	          list-style:none;
+            color:white;
+            font-family: 'Hi Melody', cursive;
+            font-size:1.8em;
+            padding:30px 50px;
+}
+nav ul li a:hover{
+  background-color:#F37979;
+  border-radius: 5px 5px 0px 0px ; 
+}
+
+
+/*--------------------INFO ARRIBA-------------------*/
+
+#imgHeader{ 
+  padding: 5px;
+  height: 200px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+  font-size:3em;
+  color: #E54444;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+  font-size:1em;
+  color: #E54444;
+}
+
+a {
+  text-decoration: none;
+}
+.sub {
+  text-align: center;
+  color: #E54444;
+  font-family: 'Jua', sans-serif;
+}
+
+.redes1{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.iconos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+.icon{
+  height: 50px;
+  margin: 10px;  
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+body div p{
+  font-family: 'Jua', sans-serif; 
+  font-size: 1.1em;
+  /*width: 50%;*/
+  }
+
+.InfoPersonal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.TextoPersonal{
+  padding: 10px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ text-align: justify;
+ }
+/*--------------------CARROUSEL-------------------*/
+
+.img-slide {
+  height: 450px;
+}
+
+/*--------------------SECCION PERFIL-------------------*/
+section{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+}
+  
+.InformacionPersonal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.contenedor:hover .contenedor-img{
+  transform: scale(1.15);
+}
+
+
+.contenedor:hover {
+  background-color: #F9F8EA;
+}
+
+.contenedor {
+  width: 300px;
+  padding: 20px;
+}
+    
+.contenedor-img{
+  transition:  all 0.5s;
+  height: 300px;
+  margin: 20px;
+  }
+
+  h2{
+  font-family: 'Jua', sans-serif;
+  color: #E54444;
+  }
+
+  .descripcion{
+    font-family: 'Jua', sans-serif;
+    font-size: 1em;
+  }
+
+/*--------------------REDES SOCIALES-------------------*/
+.RedesSociales{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E54444; 
+}
+.icon2 {
+  margin: 10px;
+  height: 50px;
+}
+
+#mail {
+  padding: 10px;
+  color: white;
+}              
+
+.icon2:hover {
+  transform: scale(1.15);
+}
+
+
+/*--------------------RESPONSIVE-------------------*/
+
+@media (max-width: 800px) {
+
+header{
+  width: 100%;
+}
+  nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li a{
+  padding: 0;
+  margin: 10px;
+}
+
+
+#imgHeader{
+  display: none;
+}
+
+.redes1{
+display: none;
+}
+
+.TextoPersonal{
+  width: 100%;
+  margin: 10px;
+}
+
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.InformacionPersonal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  font-size: 1.5em;
+}
+
+figure{ 
+  display: flex;
+  flex-direction: row;
+}
+
+}
+
+
+@media (max-width: 450px){
+ 
+  header{
+    width: 100%;
+  }
+
+  #logo{
+    display: none;
+  }
+
+    nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul li a{
+    padding: 0;
+    margin: 7px;
+  }
+  
+  
+  #imgHeader{
+    display: none;
+  }
+  
+  .redes1{
+  display: none;
+  }
+  
+  .TextoPersonal{
+    width: 100%;
+    margin: 10px;
+  }
+  
+  
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .InformacionPersonal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  
+  .descripcion{
+    display: none;
+  }
+
+  figure{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contenedor-img{
+    transition:  all 0.5s;
+    width: 200px;
+    margin: 10;
+    }
+
+    .RedesSociales{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+  }

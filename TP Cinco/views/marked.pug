@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	div(id="cuerpoHome" class= 'principal')
+			div.alinear
+				h3.fix Esta es tu seleccion de libros favoritos de mi bilioteca
+				if(fav.length>0)
+					ul
+						each bookmarked in fav
+							li= bookmarked 
+								a(href="/biblioteca/ficha/"+bookmarked).link2='  - Detalle'
+				else 
+					h3 Aun no seleccionaste ningun libro, volve a la pagina principal y proba nuevamente
+
+				a.link(href="javascript:history.back()") Volver a la pagina anterior
+				a.link(href="/") Pagina principal
+
+                                
+				

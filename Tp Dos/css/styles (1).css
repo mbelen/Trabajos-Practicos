@@ -1,0 +1,50 @@
+
+
+body{
+    background-color: #ffb1a1;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 200px;
+}
+
+#Info {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#nombre{
+    height: 25px;
+}
+
+#contador {
+    font-size:50px;
+    color:#434343;
+  }
+
+.pieza {
+    height: 200px;
+    width: 150px;
+    margin: 10px;
+    background-color: #ff5e6d;
+    background-image: url(../img/star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flipped{
+    height: 200px;
+    width: 150px;
+    margin: 10px;
+    background-color: #ffde3f;
+    
+}
+
+.row {
+    display: flex;
+}
+
